@@ -1,0 +1,22 @@
+{
+  "name": "pwa-push-server",
+  "version": "1.0.0",
+  "description": "PWA Push Notification Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["pwa", "push", "notification"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "node-cron": "^4.2.1",
+    "web-push": "^3.6.7"
+  }
+}
