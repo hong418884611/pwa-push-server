@@ -10,13 +10,17 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "keywords": ["pwa", "push", "notification"],
+  "keywords": [
+    "pwa",
+    "push",
+    "notification"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.2.1",
+    "express": "^4.18.2",
     "node-cron": "^4.2.1",
-    "web-push": "^3.6.7"
+    "web-push": "^3.5.0"
   }
 }

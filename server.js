@@ -20,8 +20,17 @@ webpush.setVapidDetails(
     VAPID_PRIVATE_KEY
 );
 
-// 中间件
-app.use(cors());
+// CORS 配置 - 允许所有来源
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'bypass-tunnel-reminder'],
+    credentials: false
+}));
+
+// 处理预检请求
+app.options('*', cors());
+
 app.use(express.json());
 
 // 存储订阅信息和定时任务
